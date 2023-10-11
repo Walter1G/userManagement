@@ -18,45 +18,44 @@
 
     <div class="list">
         <div>
-            <fieldset id="userlist">
+            <fieldset >
                 <legend>users</legend>
                 <ul id="users">
     
                 </ul>
                
-            </fieldset>
-            <fieldset>
-                <legend>USER</legend>
-                <form action=""     id="userform">          
+            
+               <div class="userDetail">
+                <form    id="userform">          
             
                     <div class="card">
                      <div>
-                         <label for="firstName">First Name</label>
-                         <input type="text" placeholder="First Name"  id="firstName">
+                         <label >First Name: <input type="text"   disabled   id="firstNameInfo"></label>
+                         
                 
-                         <label for="LastName">Last Name:</label>
-                         <input type="text" placeholder="Last Name"  id="lastName">
+                         <label >Last Name: <input type="text"  disabled    id="lastNameInfo"></label>
+                         
                      </div>
                     </div>
                     <div class="card">
                      <div>
-                         <label for="age">AGE:</label>
-                         <input type="text" placeholder="AGE"  id="age">
+                         <label >AGE: <input type="text"  disabled    id="ageInfo"></label>
+                         
                     
-                         <label for="city">City:</label>
-                         <input type="text" placeholder="CITY"  id="city">
+                         <label >City: <input type="text"  disabled    id="cityInfo"></label>
+                         
                      </div>
                     </div>
                     <div class="card">
                      <div>
-                         <label for="username">UserName:</label>
-                         <input type="text" placeholder="User name"  id="username">
+                         <label >UserName: <input type="text"  disabled    id="usernameInfo"></label>
+                         
                      
-                         <label for="email">EMAIL:</label>
-                         <input type="email" placeholder="EMAIL"  id="emailInfo"> 
+                         <label >EMAIL: <input type="email"  disabled    id="emailInfo"> </label>
+                         
                      </div>
             
-                     <div>
+                     <div class="buttons">
                         <button>EDIT</button>
                         <button>SAVE</button>
                         <button>DELETE</button>
@@ -65,6 +64,8 @@
             
             
                  </form>
+               </div> 
+               
             
               </fieldset>
             
@@ -84,7 +85,7 @@
                 <label for="firstName">First Name</label>
                 <input type="text" placeholder="First Name"  id="firstName">
           
-                <label for="LastName">Last Name:</label>
+                <label for="lastName">Last Name:</label>
                 <input type="text" placeholder="Last Name"  id="lastName">
             </div>
            </div>
@@ -99,15 +100,14 @@
            </div>
            <div class="card">
             <div>
-                <label for="username">UserName:</label>
-                <input type="text" placeholder="User name"  id="username">
+                <label for="userName">UserName:</label>
+                <input type="text" placeholder="User name"  id="userName">
                 
                     <label for="email">EMAIL:</label>
                     <input type="text" placeholder="EMAIL"  id="email">
                    
                 
-            </div>
-         
+            </div>         
             
             <button>Create User</button>
            </div>

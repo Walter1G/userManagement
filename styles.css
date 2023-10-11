@@ -1,9 +1,37 @@
 body{
-    max-width: 600px;
+    max-width: 650px;
    margin: auto;
     
 }
 
-div{
-    text-align: center;
+
+
+#userlist{
+   text-align: left;
+}
+.userDetail{
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+
+    margin: 5px 5px;
+}
+#createUserForm *  :not(.buttons), #userform *  :not(.buttons) {
+    margin: 5px;
+    margin-left: 5px;  
+   
+}
+.buttons{
+    display:  flex;
+    text-align: justify;
+}
+
+#createUserForm{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin: 5px 5px;
 }

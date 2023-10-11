@@ -15,9 +15,29 @@ function displayUsers(users){
         for(const user of users){
            
             const listItem = document.createElement('li');
-            listItem.textContent=`${user.firstName} ${user.lastName}`;        
+            listItem.textContent=`${user.firstName} ${user.lastName}`; 
+            listItem.addEventListener('click',e=>{
+                e.preventDefault();
+                displayUserInfo(user);
+            })       
             usersList.appendChild(listItem);
         }
+}
+
+function displayUserInfo(user){
+    
+    console.log(user)
+    console.log(document.getElementById('firstNameInfo'))
+    document.getElementById('firstNameInfo').value="test"
+
+   document.getElementById('firstNameInfo').value=user.firstName;
+   document.getElementById('lastNameInfo').value=user.lastName;
+   document.getElementById('ageInfo').value=user.age;
+   document.getElementById('cityInfo').value=user.city;
+   document.getElementById('usernameInfo').value=user.username;
+   document.getElementById('emailInfo').value=user.email;
+
+
 }
 
 

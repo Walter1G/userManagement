@@ -1,31 +1,49 @@
 {
-    "users":[
-        {
-          "id": 1,
-          "username": "john_doe",
-          "email": "john@example.com",
-          "firstName": "John",
-          "lastName": "Doe",
-          "age": 30,
-          "city": "New York"
-        },
-        {
-          "id": 2,
-          "username": "jane_smith",
-          "email": "jane@example.com",
-          "firstName": "Jane",
-          "lastName": "Smith",
-          "age": 28,
-          "city": "Los Angeles"
-        },
-        {
-          "id": 3,
-          "username": "bob_johnson",
-          "email": "bob@example.com",
-          "firstName": "Bob",
-          "lastName": "Johnson",
-          "age": 35,
-          "city": "Chicago"
-        }
-      ]
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 30,
+      "city": "New York"
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 28,
+      "city": "Los Angeles"
+    },
+    {
+      "id": 3,
+      "username": "bob_johnson",
+      "email": "bob@example.com",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "age": 35,
+      "city": "Chicago"
+    },
+    {
+      "username": "@barty",
+      "email": "user@user.com",
+      "firstName": "Bart ",
+      "lastName": "Simpson",
+      "age": "54",
+      "city": "New York",
+      "id": 4
+    },
+    {
+      "username": "feibeibe@barty",
+      "email": "njorogefaith@mail.com",
+      "firstName": "Faith",
+      "lastName": "Love",
+      "age": "54",
+      "city": "Gachie",
+      "id": 5
+    }
+  ]
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>User Management</title>
 </head>
 <body>
@@ -16,17 +17,63 @@
     </div>
 
     <div class="list">
-        <fieldset id="userlist">
-            <legend>users</legend>
-            <ul id="users">
-
-            </ul>
-           
-        </fieldset>
+        <div>
+            <fieldset id="userlist">
+                <legend>users</legend>
+                <ul id="users">
+    
+                </ul>
+               
+            </fieldset>
+            <fieldset>
+                <legend>USER</legend>
+                <form action=""     id="userform">          
+            
+                    <div class="card">
+                     <div>
+                         <label for="firstName">First Name</label>
+                         <input type="text" placeholder="First Name"  id="firstName">
+                
+                         <label for="LastName">Last Name:</label>
+                         <input type="text" placeholder="Last Name"  id="lastName">
+                     </div>
+                    </div>
+                    <div class="card">
+                     <div>
+                         <label for="age">AGE:</label>
+                         <input type="text" placeholder="AGE"  id="age">
+                    
+                         <label for="city">City:</label>
+                         <input type="text" placeholder="CITY"  id="city">
+                     </div>
+                    </div>
+                    <div class="card">
+                     <div>
+                         <label for="username">UserName:</label>
+                         <input type="text" placeholder="User name"  id="username">
+                     
+                         <label for="email">EMAIL:</label>
+                         <input type="email" placeholder="EMAIL"  id="emailInfo"> 
+                     </div>
+            
+                     <div>
+                        <button>EDIT</button>
+                        <button>SAVE</button>
+                        <button>DELETE</button>
+                     </div>
+                    </div>
+            
+            
+                 </form>
+            
+              </fieldset>
+            
+        </div>
+    
 
     </div>
 
-  <fieldset>
+  <fieldset style="visibility: visible;">
     <legend>Create User</legend>
     <div class="create">
        
@@ -36,8 +83,7 @@
             <div>
                 <label for="firstName">First Name</label>
                 <input type="text" placeholder="First Name"  id="firstName">
-            </div>
-            <div>
+          
                 <label for="LastName">Last Name:</label>
                 <input type="text" placeholder="Last Name"  id="lastName">
             </div>
@@ -46,8 +92,7 @@
             <div>
                 <label for="age">AGE:</label>
                 <input type="text" placeholder="AGE"  id="age">
-            </div>
-            <div>
+            
                 <label for="city">City:</label>
                 <input type="text" placeholder="CITY"  id="city">
             </div>
@@ -56,11 +101,15 @@
             <div>
                 <label for="username">UserName:</label>
                 <input type="text" placeholder="User name"  id="username">
+                
+                    <label for="email">EMAIL:</label>
+                    <input type="text" placeholder="EMAIL"  id="email">
+                   
+                
             </div>
-            <div>
-                <label for="email">EMAIL:</label>
-                <input type="text" placeholder="EMAIL"  id="email">
-            </div>
+         
+            
+            <button>Create User</button>
            </div>
 
 
@@ -68,45 +117,6 @@
     </div>
   </fieldset>
 
-  <fieldset>
-    <legend>USER</legend>
-    <form action=""     id="userform">          
-
-        <div class="card">
-         <div>
-             <label for="firstName">First Name</label>
-             <input type="text" placeholder="First Name"  id="firstName">
-         </div>
-         <div>
-             <label for="LastName">Last Name:</label>
-             <input type="text" placeholder="Last Name"  id="lastName">
-         </div>
-        </div>
-        <div class="card">
-         <div>
-             <label for="age">AGE:</label>
-             <input type="text" placeholder="AGE"  id="age">
-         </div>
-         <div>
-             <label for="city">City:</label>
-             <input type="text" placeholder="CITY"  id="city">
-         </div>
-        </div>
-        <div class="card">
-         <div>
-             <label for="username">UserName:</label>
-             <input type="text" placeholder="User name"  id="username">
-         </div>
-         <div>
-             <label for="email">EMAIL:</label>
-             <input type="text" placeholder="EMAIL"  id="email">
-         </div>
-        </div>
-
-
-     </form>
-
-  </fieldset>
 
 
 

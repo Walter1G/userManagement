@@ -27,11 +27,7 @@ function displayUsers(users){
         }
 
         // editBtn.addEventListener('click', e=>{e.preventDefault(); console.log('edit')})
-      
-
-
-
-       
+            
 
 }
 
@@ -50,7 +46,7 @@ function displayUserInfo(user){
     console.log(user)
     console.log(document.getElementById('firstNameInfo'))
     
-
+    //display user info in the fields
     firstNameInfo.value=user.firstName;
     lastNameInfo.value=user.lastName;
     ageInfo.value=user.age;
@@ -58,7 +54,7 @@ function displayUserInfo(user){
     usernameInfo.value=user.username;
     emailInfo.value=user.email;
 
-
+    //enable user edit
     editBtn.addEventListener('click', e=>{
         e.preventDefault();
         console.log('edit cliecked');
@@ -70,6 +66,7 @@ function displayUserInfo(user){
         emailInfo.removeAttribute("disabled");
         console.log('after disabling');
 
+        //handle update event
         saveBtn.addEventListener('click',e=>{
             e.preventDefault();
      
@@ -92,8 +89,12 @@ function displayUserInfo(user){
             console.log('save clicked')
         });
 
-
-        deleteBtn.addEventListener('click',e=>{e.preventDefault(); console.log('delete cliecked')});
+        //handle delete event
+        deleteBtn.addEventListener('click',e=>{
+            e.preventDefault();
+            deleteUser(user.id);
+               
+        });
 
         
     });
@@ -171,7 +172,7 @@ function createUser(userObj){
     .then(user => console.log(user));
 
 }
-
+//update user
 function updateUser(user){    
 
     return fetch(`http://localhost:3000/users/${user.id}`,{
@@ -180,10 +181,17 @@ function updateUser(user){
         body:JSON.stringify(user),
     }).then(res => res.json())
     .then(user => console.log(user))
-
-
-
 }
+
+//remove user
+function deleteUser(id){
+    return fetch(`http://localhost:3000/users/${id}`,{
+        method:'DELETE',
+        headers:{"Content-Type":"application/json"},
+    }).then(res => res.josn)
+    .then(alert("RECORD DELETED"))
+}
+
 
 
 

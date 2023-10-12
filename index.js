@@ -196,5 +196,5 @@ function deleteUser(id){
 
 
 
-
+//on load, display a list of users
 getAllUsers();

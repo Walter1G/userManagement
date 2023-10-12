@@ -22,6 +22,8 @@ function displayUsers(users){
             listItem.addEventListener('click',e=>{
                 e.preventDefault();
                 displayUserInfo(user);
+                //enable edit button
+                editBtn.removeAttribute('disabled')
             })       
             usersList.appendChild(listItem);
         }
@@ -54,6 +56,8 @@ function displayUserInfo(user){
     usernameInfo.value=user.username;
     emailInfo.value=user.email;
 
+    
+
     //enable user edit
     editBtn.addEventListener('click', e=>{
         e.preventDefault();
@@ -68,8 +72,7 @@ function displayUserInfo(user){
 
         //handle update event
         saveBtn.addEventListener('click',e=>{
-            e.preventDefault();
-     
+            e.preventDefault();     
 
             user.firstName=firstNameInfo.value;
             user.lastName=lastNameInfo.value;

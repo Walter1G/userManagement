@@ -1,6 +1,9 @@
 const usersList = document.getElementById('users');
 const createUserForm = document.getElementById('createUserForm');
 const userDetailsForm = document.getElementById('userform');
+const editBtn = document.getElementById('editBtn');
+const saveBtn = document.getElementById('saveBtn');
+const deleteBtn = document.getElementById('deleteBtn');
 
 
 function getAllUsers(){
@@ -22,20 +25,57 @@ function displayUsers(users){
             })       
             usersList.appendChild(listItem);
         }
+
+        // editBtn.addEventListener('click', e=>{e.preventDefault(); console.log('edit')})
+      
+
+
+
+       
+
 }
+
+//input fields for info
+const firstNameInfo =document.getElementById('firstNameInfo');
+const lastNameInfo =document.getElementById('lastNameInfo');
+const ageInfo =document.getElementById('ageInfo');
+const cityInfo =document.getElementById('cityInfo');
+const usernameInfo =document.getElementById('usernameInfo');
+const emailInfo =document.getElementById('emailInfo');
+
 
 function displayUserInfo(user){
     
     console.log(user)
     console.log(document.getElementById('firstNameInfo'))
-    document.getElementById('firstNameInfo').value="test"
+    
 
-   document.getElementById('firstNameInfo').value=user.firstName;
-   document.getElementById('lastNameInfo').value=user.lastName;
-   document.getElementById('ageInfo').value=user.age;
-   document.getElementById('cityInfo').value=user.city;
-   document.getElementById('usernameInfo').value=user.username;
-   document.getElementById('emailInfo').value=user.email;
+    firstNameInfo.value=user.firstName;
+    lastNameInfo.value=user.lastName;
+    ageInfo.value=user.age;
+    cityInfo.value=user.city;
+    usernameInfo.value=user.username;
+    emailInfo.value=user.email;
+
+
+    editBtn.addEventListener('click', e=>{
+        e.preventDefault();
+        console.log('edit cliecked');
+        firstNameInfo.removeAttribute("disabled");
+        lastNameInfo.removeAttribute("disabled");
+        ageInfo.removeAttribute("disabled");
+        cityInfo.removeAttribute("disabled");
+        usernameInfo.removeAttribute("disabled");
+        emailInfo.removeAttribute("disabled");
+        console.log('after disabling');
+
+        saveBtn.addEventListener('click',e=>{e.preventDefault(); console.log('save cliecked')});
+        deleteBtn.addEventListener('click',e=>{e.preventDefault(); console.log('delete cliecked')});
+
+        
+    });
+
+   
 
 
 }

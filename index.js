@@ -44,6 +44,7 @@ const usernameInfo =document.getElementById('usernameInfo');
 const emailInfo =document.getElementById('emailInfo');
 
 
+//handle user info section
 function displayUserInfo(user){
     
     console.log(user)
@@ -69,7 +70,29 @@ function displayUserInfo(user){
         emailInfo.removeAttribute("disabled");
         console.log('after disabling');
 
-        saveBtn.addEventListener('click',e=>{e.preventDefault(); console.log('save cliecked')});
+        saveBtn.addEventListener('click',e=>{
+            e.preventDefault();
+     
+
+            user.firstName=firstNameInfo.value;
+            user.lastName=lastNameInfo.value;
+            user.age= ageInfo.value;
+            user.city=cityInfo.value;
+            user.username=usernameInfo.value;
+            user.email=emailInfo.value;
+            updateUser(user);
+
+            firstNameInfo.setAttribute("disabled");
+            lastNameInfo.setAttribute("disabled");
+            ageInfo.setAttribute("disabled");
+            cityInfo.setAttribute("disabled");
+            usernameInfo.setAttribute("disabled");
+            emailInfo.setAttribute("disabled");
+            
+            console.log('save clicked')
+        });
+
+
         deleteBtn.addEventListener('click',e=>{e.preventDefault(); console.log('delete cliecked')});
 
         
@@ -117,7 +140,7 @@ document.getElementById('createUserForm').addEventListener('submit',handleSubmit
 function handleSubmit(e){
     e.preventDefault();
     let userObj ={
-        username:e.target.username.value,  
+        username:e.target.userName.value,  
         email:e.target.email.value,      
         firstName: e.target.firstName.value,
         lastName: e.target.lastName.value,
@@ -125,17 +148,18 @@ function handleSubmit(e){
         city:e.target.city.value,       
       
        
-    }
-   
+    }   
 
 
     createUser(userObj);
-    // getAllUsers();
+    getAllUsers();
 }
 
 
 
 
+
+//add user
 function createUser(userObj){
    
        
@@ -145,6 +169,19 @@ function createUser(userObj){
         body:JSON.stringify(userObj)
     }).then(res => res.json)
     .then(user => console.log(user));
+
+}
+
+function updateUser(user){    
+
+    return fetch(`http://localhost:3000/users/${user.id}`,{
+        method:'PATCH',
+        headers:{'Content-type':'application/json'},
+        body:JSON.stringify(user),
+    }).then(res => res.json())
+    .then(user => console.log(user))
+
+
 
 }
 

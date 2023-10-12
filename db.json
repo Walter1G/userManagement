@@ -38,12 +38,21 @@
     },
     {
       "username": "feibeibe@barty",
-      "email": "njorogefaith@mail.com",
+      "email": "clemfaith@mail.com",
       "firstName": "Faith",
-      "lastName": "Love",
+      "lastName": "Clement",
       "age": "54",
-      "city": "Gachie",
+      "city": "Nairobi",
       "id": 5
+    },
+    {
+      "username": "Cubsy-Wubsy",
+      "email": "malloy@brickleberry.com",
+      "firstName": "Cubsy-Wubsy",
+      "lastName": "Malloy",
+      "age": "5",
+      "city": "Brickle-berry",
+      "id": 6
     }
   ]
 }

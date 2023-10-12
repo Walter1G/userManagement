@@ -61,14 +61,18 @@ function displayUserInfo(user){
     //enable user edit
     editBtn.addEventListener('click', e=>{
         e.preventDefault();
-        console.log('edit cliecked');
+       
         firstNameInfo.removeAttribute("disabled");
         lastNameInfo.removeAttribute("disabled");
         ageInfo.removeAttribute("disabled");
         cityInfo.removeAttribute("disabled");
         usernameInfo.removeAttribute("disabled");
         emailInfo.removeAttribute("disabled");
-        console.log('after disabling');
+
+        //enable save and delete buttons on edit
+        saveBtn.removeAttribute("disabled");
+        deleteBtn.removeAttribute("disabled");
+       
 
         //handle update event
         saveBtn.addEventListener('click',e=>{

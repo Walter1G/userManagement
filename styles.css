@@ -14,7 +14,7 @@ body{
     grid-template-rows: 100px 1fr 100px;
     gap: 1px;
 
-    padding: 10px;
+    padding: 1px;
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body{
 
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color:#25476a;
+    background-color:#fcdf89;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -37,8 +37,11 @@ body{
 .userlist{
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 
     background-color: #c8dff9;
+    font-family: 'Times New Roman', Times, serif;
  
 }
 
@@ -56,7 +59,18 @@ li:hover{
 #userlist{
    text-align: left;
 }
+.formArea{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+
+}
+
 .userDetail{
+   
+
     border: 1px solid black;
     padding-top: 10px;
     padding-left: 5px;
@@ -68,11 +82,17 @@ li:hover{
 #createUserForm *  :not(.buttons), #userform *  :not(.buttons) {
     margin: 5px;
     margin-left: 5px;  
+    
    
 }
 .buttons{
     display:  flex;
     text-align: justify;
+}
+button{
+    border-radius: 15px;
+    background-color: #f9bc05;
+
 }
 
 #createUserForm{
@@ -81,4 +101,15 @@ li:hover{
     padding-bottom: 10px;
     padding-right: 5px;
     margin: 5px 5px;
+}
+.CreateUser{
+    background-color: #5f5b5b;
+    
+}
+.CreateUser label{
+    font-weight: bold;
+}
+
+.formArea p{
+    text-align: center;
 }

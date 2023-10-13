@@ -80,6 +80,15 @@
       "age": "12",
       "city": "Chicago",
       "id": 10
+    },
+    {
+      "username": "djG",
+      "email": "grauchi@hbr.com",
+      "firstName": "dj",
+      "lastName": "Grauchi",
+      "age": "35",
+      "city": "Nairobi",
+      "id": 11
     }
   ]
 }

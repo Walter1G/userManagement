@@ -62,6 +62,33 @@
       "age": "12",
       "city": "gtw",
       "id": 10
+    },
+    {
+      "username": "newUser",
+      "email": "new@com",
+      "firstName": "new ",
+      "lastName": "User",
+      "age": "24",
+      "city": "cloud",
+      "id": 11
+    },
+    {
+      "username": "theRock",
+      "email": "dwaine@rock.com",
+      "firstName": "Dwane",
+      "lastName": "Johnson",
+      "age": "50",
+      "city": "Huwai",
+      "id": 12
+    },
+    {
+      "username": "Khart",
+      "email": "khart@com",
+      "firstName": "Kevin ",
+      "lastName": "Hart",
+      "age": "45",
+      "city": "Beverly",
+      "id": 13
     }
   ]
 }

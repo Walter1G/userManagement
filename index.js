@@ -118,37 +118,6 @@ function displayUserInfo(user){
 }
 
 
-// document.getElementById('createUserForm').addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//         // Get the form data
-//     const formData = new FormData(event.target);
-
-//     // Convert form data to an object
-//     const data = {};
-//     formData.forEach((value, key) => {
-//     data[key] = value;
-//     });
-//     // Send the data using a POST request
-//     fetch('your_server_endpoint', {
-//         method: 'POST',
-//         body: JSON.stringify(data),
-//         headers: {
-//         'Content-Type': 'application/json',
-//         },
-//     })
-//     .then(response => response.json()) // Assuming the server responds with JSON
-//     .then(responseData => {
-//         // Handle the response from the server if needed
-//         console.log('Response from the server:', responseData);
-//     })
-//     .catch(error => {
-//         // Handle any errors that occur during the fetch request
-//         console.error('Error:', error);
-//     });
-
-// })
-
 document.getElementById('createUserForm').addEventListener('submit',handleSubmit);
 
 function handleSubmit(e){
@@ -182,7 +151,7 @@ function createUser(userObj){
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(userObj)
     }).then(res => res.json)
-    .then(user => console.log(user));
+    .then(user => alert(`User added on record`));
 
 }
 //update user

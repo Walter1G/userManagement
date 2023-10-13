@@ -1,9 +1,15 @@
 const usersList = document.getElementById('users');
 const createUserForm = document.getElementById('createUserForm');
+const addUserImg = document.getElementById('addUserIcon');
 const userDetailsForm = document.getElementById('userform');
 const editBtn = document.getElementById('editBtn');
 const saveBtn = document.getElementById('saveBtn');
 const deleteBtn = document.getElementById('deleteBtn');
+const addUserIcon = document.getElementsByClassName('nav');
+const FormArea= document.getElementsByClassName('formArea')
+
+
+
 
 
 function getAllUsers(){
@@ -86,12 +92,12 @@ function displayUserInfo(user){
             user.email=emailInfo.value;
             updateUser(user);
 
-            firstNameInfo.setAttribute("disabled");
-            lastNameInfo.setAttribute("disabled");
-            ageInfo.setAttribute("disabled");
-            cityInfo.setAttribute("disabled");
-            usernameInfo.setAttribute("disabled");
-            emailInfo.setAttribute("disabled");
+            firstNameInfo.setAttribute("disabled","disabled");
+            lastNameInfo.setAttribute("disabled","disabled");
+            ageInfo.setAttribute("disabled","disabled");
+            cityInfo.setAttribute("disabled","disabled");
+            usernameInfo.setAttribute("disabled","disabled");
+            emailInfo.setAttribute("disabled","disabled");
             
             console.log('save clicked')
         });

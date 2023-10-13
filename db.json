@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "john_doe",
-      "email": "john@example.com",
-      "firstName": "John",
-      "lastName": "Doe",
-      "age": 30,
-      "city": "New York"
-    },
-    {
       "id": 2,
       "username": "jane_smith",
       "email": "jane@example.com",
@@ -71,6 +62,15 @@
       "age": "120",
       "city": "bin",
       "id": 8
+    },
+    {
+      "username": "oops2",
+      "email": "user@user.com",
+      "firstName": "Esther",
+      "lastName": "Kamau",
+      "age": "16",
+      "city": "Gachie",
+      "id": 9
     }
   ]
 }

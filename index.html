@@ -7,25 +7,92 @@
     <title>User Management</title>
 </head>
 <body>
-    <div class="header">
-        <ul class="nav">
+    <div class="container">
+        <div class="headerArea">
+            <div>
+                <p>User Management<img src="./images/persons.png" height="25px" width="25px" alt=""> </p>
+                
+                
+            </div>
 
+            <div class="create">
+                <!-- <button id="adduser">Add User</button> -->
+                <a href="#createUserForm">Add user</a>
+            </div>       
+                            
+             
+
+        </div>
+        <!-- Generate userList Here  -->
+        <div class="userlist">
+            <p>Users</p>
            
-        </ul>
+                <ul style="max-height: 5;" id="users">
+    
+                </ul>
+            
+
+        </div>
+        <div class="formArea">
+            <form    id="userform">          
+            
+                <div class="card">
+            
+                     <label >First Name: <input type="text"   disabled   id="firstNameInfo"></label>
+                     
+            
+                     <label >Last Name: <input type="text"  disabled    id="lastNameInfo"></label>
+                     
+                
+                </div>
+                <div class="card">
+                 
+                     <label >AGE: <input type="text"  disabled    id="ageInfo"></label>
+                     
+                
+                     <label >City: <input type="text"  disabled    id="cityInfo"></label>
+                     
+              
+                </div>
+                <div class="card">
+                
+                     <label >UserName: <input type="text"  disabled    id="usernameInfo"></label>
+                     
+                 
+                     <label >EMAIL: <input type="email"  disabled    id="emailInfo"> </label>
+                    
+                 
+                </div>
+                <div class="card">
+                    <div class="card">
+                        <button disabled id="editBtn">EDIT</button>
+                        <button disabled id="saveBtn">UPDATE</button>
+                        <button disabled id="deleteBtn">DELETE</button>
+                     </div>
+                </div>
         
+        
+             </form>
+            
+        </div>
         
     </div>
+
+
+    <!-- <div class="nav">
+       <a href="#createUserForm"><img id="addUserIcon" src="./images/add-user.png" height="25px" width="25px" alt="Add user"></a>
+    </div> -->
 
     <div class="list">
         <div>
             <fieldset >
-                <legend>users</legend>
-                <ul id="users">
+                <!-- <legend>users</legend>
+                <ul style="max-height: 5;" id="users">
     
-                </ul>
+                </ul> -->
                
             
-               <div class="userDetail">
+               <!-- <div class="userDetail">
                 <form    id="userform">          
             
                     <div class="card">
@@ -64,7 +131,7 @@
             
             
                  </form>
-               </div> 
+               </div>  -->
                
             
               </fieldset>
@@ -74,7 +141,7 @@
 
     </div>
 
-  <fieldset style="visibility: visible;">
+  <fieldset class="CreateUser">
     <legend>Create User</legend>
     <div class="create">
        

@@ -10,15 +10,6 @@
       "city": "Los Angeles"
     },
     {
-      "id": 3,
-      "username": "bob_johnson",
-      "email": "bob@example.com",
-      "firstName": "Bob",
-      "lastName": "Johnson",
-      "age": 35,
-      "city": "Chicago"
-    },
-    {
       "username": "@barty",
       "email": "user@user.com",
       "firstName": "Bart ",
@@ -26,15 +17,6 @@
       "age": "54",
       "city": "New York",
       "id": 4
-    },
-    {
-      "username": "feibeibe@barty",
-      "email": "clemfaith@mail.com",
-      "firstName": "Faith",
-      "lastName": "Clement",
-      "age": "54",
-      "city": "Nairobi",
-      "id": 5
     },
     {
       "username": "Cubsy-Wubsy",
@@ -46,49 +28,40 @@
       "id": 6
     },
     {
-      "username": "bestDetective",
-      "email": "Jake@bestDetective.99",
-      "firstName": "Jake",
-      "lastName": "Peralta ",
-      "age": "42",
-      "city": "Brooklyn",
-      "id": 7
-    },
-    {
-      "username": "oops",
-      "email": "delete@mail.com",
-      "firstName": "user",
-      "lastName": "delete",
-      "age": "120",
-      "city": "bin",
-      "id": 8
-    },
-    {
-      "username": "oops2",
-      "email": "user@user.com",
-      "firstName": "Esther",
-      "lastName": "Kamau",
-      "age": "16",
-      "city": "Gachie",
-      "id": 9
-    },
-    {
       "username": "bilyJohnson",
       "email": "company@gmail.com",
       "firstName": "Billy",
       "lastName": "John",
       "age": "12",
       "city": "Chicago",
-      "id": 10
+      "id": 7
     },
     {
-      "username": "djG",
-      "email": "grauchi@hbr.com",
-      "firstName": "dj",
-      "lastName": "Grauchi",
-      "age": "35",
-      "city": "Nairobi",
-      "id": 11
+      "username": "spiderman",
+      "email": "spider@peter.com",
+      "firstName": "Peter",
+      "lastName": "Parker",
+      "age": "21",
+      "city": "Meta",
+      "id": 8
+    },
+    {
+      "username": "Batman",
+      "email": "gothamSafe@gmail.com",
+      "firstName": "Bruce ",
+      "lastName": "wayne",
+      "age": "32",
+      "city": "Gothan",
+      "id": 9
+    },
+    {
+      "username": "baraka",
+      "email": "mil@com",
+      "firstName": "Ess",
+      "lastName": "K",
+      "age": "12",
+      "city": "gtw",
+      "id": 10
     }
   ]
 }

@@ -101,6 +101,15 @@ button{
     padding-bottom: 10px;
     padding-right: 5px;
     margin: 5px 5px;
+
+    width: 600px;
+    justify-content:space-between;
+}
+
+#addusr{
+    margin-right: 20px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
 }
 .CreateUser{
     background-color: #5f5b5b;

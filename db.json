@@ -37,15 +37,6 @@
       "id": 7
     },
     {
-      "username": "spiderman",
-      "email": "spider@peter.com",
-      "firstName": "Peter",
-      "lastName": "Parker",
-      "age": "21",
-      "city": "Meta",
-      "id": 8
-    },
-    {
       "username": "Batman",
       "email": "gothamSafe@gmail.com",
       "firstName": "Bruce ",
@@ -64,15 +55,6 @@
       "id": 10
     },
     {
-      "username": "newUser",
-      "email": "new@com",
-      "firstName": "new ",
-      "lastName": "User",
-      "age": "24",
-      "city": "cloud",
-      "id": 11
-    },
-    {
       "username": "theRock",
       "email": "dwaine@rock.com",
       "firstName": "Dwane",
@@ -89,6 +71,24 @@
       "age": "45",
       "city": "Beverly",
       "id": 13
+    },
+    {
+      "username": "change",
+      "email": "mail@gmail.com",
+      "firstName": "change",
+      "lastName": "button event",
+      "age": "12",
+      "city": "db",
+      "id": 14
+    },
+    {
+      "username": "jjdjks",
+      "email": "mail@121",
+      "firstName": "online delete",
+      "lastName": "online delete",
+      "age": "oops",
+      "city": "andjd",
+      "id": 15
     }
   ]
 }

@@ -78,36 +78,16 @@ function displayUserInfo(user){
         //enable save and delete buttons on edit
         saveBtn.removeAttribute("disabled");
         deleteBtn.removeAttribute("disabled");
+
+        //handle update
+
+        handleUpdate(user);
        
 
-        //handle update event
-        saveBtn.addEventListener('click',e=>{
-            e.preventDefault();     
-
-            user.firstName=firstNameInfo.value;
-            user.lastName=lastNameInfo.value;
-            user.age= ageInfo.value;
-            user.city=cityInfo.value;
-            user.username=usernameInfo.value;
-            user.email=emailInfo.value;
-            updateUser(user);
-
-            firstNameInfo.setAttribute("disabled","disabled");
-            lastNameInfo.setAttribute("disabled","disabled");
-            ageInfo.setAttribute("disabled","disabled");
-            cityInfo.setAttribute("disabled","disabled");
-            usernameInfo.setAttribute("disabled","disabled");
-            emailInfo.setAttribute("disabled","disabled");
-            
-            console.log('save clicked')
-        });
-
+        
         //handle delete event
-        deleteBtn.addEventListener('click',e=>{
-            e.preventDefault();
-            deleteUser(user.id);
-               
-        });
+        handleDelete(user);
+        
 
         
     });
@@ -116,6 +96,45 @@ function displayUserInfo(user){
 
 
 }
+
+
+//handle update event
+function handleUpdate(user){
+    saveBtn.addEventListener('click',e=>{
+        e.preventDefault();     
+    
+        user.firstName=firstNameInfo.value;
+        user.lastName=lastNameInfo.value;
+        user.age= ageInfo.value;
+        user.city=cityInfo.value;
+        user.username=usernameInfo.value;
+        user.email=emailInfo.value;
+        updateUser(user);
+    
+        firstNameInfo.setAttribute("disabled","disabled");
+        lastNameInfo.setAttribute("disabled","disabled");
+        ageInfo.setAttribute("disabled","disabled");
+        cityInfo.setAttribute("disabled","disabled");
+        usernameInfo.setAttribute("disabled","disabled");
+        emailInfo.setAttribute("disabled","disabled");
+        
+        console.log('save clicked')
+    });
+
+}
+
+//handle delete
+function handleDelete(user){
+    deleteBtn.addEventListener('click',e=>{
+        e.preventDefault();
+        deleteUser(user.id);
+           
+    });
+}
+
+
+
+
 
 
 document.getElementById('createUserForm').addEventListener('submit',handleSubmit);

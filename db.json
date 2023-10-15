@@ -1,94 +1,49 @@
 {
   "users": [
     {
-      "id": 2,
-      "username": "jane_smith",
-      "email": "jane@example.com",
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "age": 28,
-      "city": "Los Angeles"
-    },
-    {
-      "username": "@barty",
-      "email": "user@user.com",
-      "firstName": "Bart ",
-      "lastName": "Simpson",
-      "age": "54",
-      "city": "New York",
-      "id": 4
-    },
-    {
-      "username": "Cubsy-Wubsy",
-      "email": "malloy@brickleberry.com",
-      "firstName": "Cubsy-Wubsy",
-      "lastName": "Malloy",
-      "age": "5",
-      "city": "Brickle-berry",
+      "username": "spiderman",
+      "email": "company@gmail.com",
+      "firstName": "New",
+      "lastName": "Wayne",
+      "age": "32",
+      "city": "Chicago",
       "id": 6
     },
     {
-      "username": "bilyJohnson",
+      "username": "doop",
       "email": "company@gmail.com",
-      "firstName": "Billy",
-      "lastName": "John",
-      "age": "12",
-      "city": "Chicago",
-      "id": 7
-    },
-    {
-      "username": "Batman",
-      "email": "gothamSafe@gmail.com",
-      "firstName": "Bruce ",
-      "lastName": "wayne",
+      "firstName": "Newman",
+      "lastName": "otovon",
       "age": "32",
-      "city": "Gothan",
+      "city": "Miami",
       "id": 9
     },
     {
-      "username": "baraka",
-      "email": "mil@com",
-      "firstName": "Ess",
-      "lastName": "K",
-      "age": "12",
-      "city": "gtw",
+      "username": "spiderman",
+      "email": "company@gmail.com",
+      "firstName": "jackson",
+      "lastName": "mass",
+      "age": "32",
+      "city": "Chicago",
       "id": 10
     },
     {
-      "username": "theRock",
-      "email": "dwaine@rock.com",
-      "firstName": "Dwane",
-      "lastName": "Johnson",
-      "age": "50",
-      "city": "Huwai",
+      "username": "spiderman",
+      "email": "company@gmail.com",
+      "firstName": "Newman",
+      "lastName": "jack",
+      "age": "32",
+      "city": "Chicago",
+      "id": 11
+    },
+    {
+      "username": "wallt",
+      "email": "walt@mail",
+      "firstName": "Walter ",
+      "lastName": "Ndungu",
+      "age": "25",
+      "city": "Nottingham",
       "id": 12
-    },
-    {
-      "username": "Khart",
-      "email": "khart@com",
-      "firstName": "Kevin ",
-      "lastName": "Hart",
-      "age": "45",
-      "city": "Beverly",
-      "id": 13
-    },
-    {
-      "username": "change",
-      "email": "mail@gmail.com",
-      "firstName": "change",
-      "lastName": "button event",
-      "age": "12",
-      "city": "db",
-      "id": 14
-    },
-    {
-      "username": "jjdjks",
-      "email": "mail@121",
-      "firstName": "online delete",
-      "lastName": "online delete",
-      "age": "oops",
-      "city": "andjd",
-      "id": 15
     }
   ]
 }

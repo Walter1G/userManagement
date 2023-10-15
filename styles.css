@@ -95,6 +95,8 @@ button{
 
 }
 
+
+
 #createUserForm{
     padding-top: 10px;
     padding-left: 5px;
@@ -111,8 +113,9 @@ button{
     font-weight: bold;
     font-family:'Times New Roman', Times, serif;
 }
-.CreateUser{
+#CreateUser{
     background-color: #5f5b5b;
+    visibility:hidden;
     
 }
 .CreateUser label{

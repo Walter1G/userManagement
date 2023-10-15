@@ -16,7 +16,7 @@
 
             <div class="create">
                 <!-- <button id="adduser">Add User</button> -->
-                <a id="addusr" href="#createUserForm"><button><img id="addUserIcon" src="./images/add-user.png" height="25px" width="25px" alt="Add user">Add User</button></a>
+                <a id="addusr" href="#createUserForm"><button id="addUsrBtn"><img id="addUserIcon" src="./images/add-user.png" height="25px" width="25px" alt="Add user">Add User</button></a>
             </div>       
                             
              
@@ -37,6 +37,7 @@
             <form    id="userform">          
             
                 <div class="card">
+                    <input type="text" hidden id="idInfo">
             
                      <label >First Name: <input type="text"   disabled   id="firstNameInfo"></label>
                      
@@ -85,9 +86,9 @@
 
     
 
-  <fieldset class="CreateUser">
-    <legend>Create User</legend>
-    <div class="create">
+  <fieldset id="CreateUser">
+    
+    <div class="CreateUser">
        
         <form action="" id="createUserForm">          
 

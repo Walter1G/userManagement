@@ -95,7 +95,10 @@ button{
 
 }
 
-
+#deleteBtn{
+    background-color: rgb(219, 61, 61);
+    color: white;
+}
 
 #createUserForm{
     padding-top: 10px;
